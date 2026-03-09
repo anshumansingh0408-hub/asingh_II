@@ -6,7 +6,7 @@ void SWAP(int a,int b)
     t=a;
     a=b;
     b=t;
-    cout<<"swapping values are:"<<a<<","<<b<<endl;
+    cout<<"swapped values are:"<<a<<","<<b<<endl;
 }
 int main()
 {

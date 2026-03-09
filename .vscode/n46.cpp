@@ -30,3 +30,4 @@ int main()
      cout<<"element is not found";
      return 0;
     }     
+//O(n) time complexity

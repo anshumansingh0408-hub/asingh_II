@@ -1,4 +1,4 @@
-//function with no return and paramete
+//function with no return and parameter
 # include<bits/stdc++.h>
 using namespace std;
 void sum(int a,int b)//using void instead of int

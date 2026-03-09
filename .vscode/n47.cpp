@@ -16,9 +16,9 @@ int main()
      cout<<"enter a element which you want to find :";
      cin>>num;
      first=0;
-     last=size;
+     last=size-1;
      mid=(first+last)/2;
-     while(first<last)
+     while(first<=last)
      {
         if(a[mid]>num)
         {
@@ -41,3 +41,4 @@ int main()
      cout<<"element not found";
      return 0;
     }     
+//O(log n) time complexity

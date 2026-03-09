@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Product Grid</title>
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        background:#f4f4f4;
+        margin:0;
+        padding:0;
+    }
+    .header{
+        text-align:center;
+        padding:20px;
+        background:#222;
+        color:#fff;
+    }
+    .container{
+        width:90%;
+        margin:auto;
+        padding:30px 0;
+    }
+    .product-grid{
+        display:grid;
+        grid-template-columns:repeat(4, 1fr);
+        gap:20px;
+    }
+
+    .product{
+        background:#fff;
+        padding:15px;
+        border-radius:8px;
+        box-shadow:0 3px 8px rgba(0,0,0,0.1);
+        text-align:center;
+        transition:.3s;
+    }
+
+    .product:hover{
+        transform:scale(1.05);
+    }
+    .product img{
+        width:100%;
+        height:200px;
+        object-fit:cover;
+        border-radius:8px;
+    }
+    .product h3{ margin:10px 0; }
+    .product p{ color:#333; font-size:14px; }
+    .price{ font-size:18px; font-weight:bold; margin:8px 0; color:#e91e63; }
+    button{
+        padding:10px 18px;
+        background:#222;
+        color:#fff;
+        border:none;
+        border-radius:4px;
+        cursor:pointer;
+    }
+    button:hover{ background:#e91e63; }
+    @media (max-width:900px){
+        .product-grid{
+            grid-template-columns:repeat(2,1fr);
+        }
+    }
+    @media (max-width:600px){
+        .product-grid{
+            grid-template-columns:1fr;
+        }
+        .product img{ height:180px; }
+    }
+</style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Responsive Product Grid</h1>
+</div>
+<div class="container">
+    <div class="product-grid">
+        <div class="product">
+            <img src="https://via.placeholder.com/300" alt="">
+            <h3>Product One</h3>
+            <p>High quality product for daily use.</p>
+            <p class="price">&#8377; 499</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/300" alt="">
+            <h3>Product Two</h3>
+            <p>Comfort & style combined together.</p>
+            <p class="price"> &#8377; 799</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/300" alt="">
+            <h3>Product Three</h3>
+            <p>Perfect design & long durability.</p>
+            <p class="price">&#8377; 1299</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/300" alt="">
+            <h3>Product Four</h3>
+            <p>Premium material and build quality.</p>
+            <p class="price">&#8377; 999</p>
+            <button>Add to Cart</button>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
