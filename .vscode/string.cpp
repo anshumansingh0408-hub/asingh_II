@@ -19,7 +19,7 @@ int main()
 
     //string length
     cout<<"length of string is:"<<str4.length()<<endl;
-a
+
     //string comparison
     if(str1==str2)
     {
@@ -59,11 +59,11 @@ cout<<str.compare(a)<<endl;
 cout<<str.substr(1,4)<<endl;
 cout<<str.find("Gha")<<endl;
 cout<<str.insert(6,"City ")<<endl;
-cout<<str.insert
-(4,a)<<endl;
+cout<<str.insert(4,a)<<endl;
 
 return 0;
 }*/
+
 string k="hello";
 string p="hi";
 cout<<k.append(p)<<endl;
