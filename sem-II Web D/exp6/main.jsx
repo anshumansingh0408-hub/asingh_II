@@ -28,7 +28,7 @@ paragraph.style.display = "none";
 
 document.getElementById("resetBtn").addEventListener("click", function () {
 heading.innerHTML = "Welcome to JavaScript Lab";
-paragraph.style.display = "block";
+paragraph.stylze.display = "block";
 paragraph.style.fontSize = "16px";
 document.body.style.backgroundColor = "#f4f4f4";
 input.value = "";
